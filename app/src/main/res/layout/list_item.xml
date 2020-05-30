@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/music_name"
+            tools:text="SongName1"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/text_size"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/author_name"
+            tools:text="By Artist1"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginTop="0dp"
+            android:textSize="@dimen/text_size"></TextView>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_weight="1.5"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:text="@string/button_name2"-->
+<!--            android:id="@+id/play_button">-->
+<!--        </Button>-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin">
+
+        <TextView
+            android:id="@+id/myMusic"
+            style="@style/CategoryStyle"
+            android:background="@color/category_numbers"
+            android:text="@string/category_my_music"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/btn_my_music"
+            android:text="@string/button_name"></Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin">
+
+        <TextView
+            android:id="@+id/podcast"
+            style="@style/CategoryStyle"
+            android:background="@color/category_family"
+            android:text="@string/category_podcast" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/button_name"
+            android:id="@+id/btn_podcast"></Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin">
+
+        <TextView
+            android:id="@+id/playMusicOnline"
+            style="@style/CategoryStyle"
+            android:background="@color/category_colors"
+            android:text="@string/category_play_music_online" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/button_name"
+            android:id="@+id/btn_play_music_online"></Button>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

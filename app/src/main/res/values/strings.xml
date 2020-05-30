@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Musical Structure APP</string>
+
+
+    <string name="category_my_music">My Music</string>
+
+
+    <string name="category_podcast">Podcast</string>
+
+
+    <string name="category_play_music_online">Play Music Online</string>
+
+    <string name="button_name">Go!</string>
+    <string name="button_name2">PLAY</string>
+
+
+</resources>
