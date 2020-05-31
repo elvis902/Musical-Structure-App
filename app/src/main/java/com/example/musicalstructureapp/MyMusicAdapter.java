@@ -35,11 +35,13 @@ public class MyMusicAdapter extends ArrayAdapter<MyMusicDetail> {
 
             TextView musicName = (TextView)listItemView.findViewById(R.id.music_name);
             TextView authorName = (TextView)listItemView.findViewById(R.id.author_name);
-//            Button playButton = (Button)listItemView.findViewById(R.id.play_button);
+          TextView tapToPlay = (TextView)listItemView.findViewById(R.id.tap_to_play);
+
 
             assert currentMusicDetail != null;
             musicName.setText(currentMusicDetail.getmSongName());
-            authorName.setText("By"+currentMusicDetail.getmAuthorName()+"(Tap to play music)");
+            authorName.setText("By "+currentMusicDetail.getmAuthorName()+"(Tap to play music)");
+            tapToPlay.setText("Tap to Play");
 
 
         }

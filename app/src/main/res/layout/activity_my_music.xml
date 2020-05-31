@@ -21,9 +21,10 @@
         >
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="54dp"
             android:text="Current Playing"
-            android:id="@+id/current_playing"></Button>
+            android:id="@+id/current_playing"
+            ></Button>
 
     </LinearLayout>
 
