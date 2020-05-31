@@ -6,6 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyMusicActivity">
+
+
+
+
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,13 +23,26 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/list"
         android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
         >
+
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:id="@+id/back_btn"
+            ></Button>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="5"
             android:layout_height="54dp"
             android:text="Current Playing"
             android:id="@+id/current_playing"
             ></Button>
+
 
     </LinearLayout>
 

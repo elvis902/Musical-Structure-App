@@ -15,12 +15,14 @@ public class MyMusicActivity extends AppCompatActivity {
     ArrayList<MyMusicDetail> myMusicDetails = new ArrayList<MyMusicDetail>();
    Button currentPlaying;
    int index = -1;
+   Button backBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_music);
 
         currentPlaying = (Button)findViewById(R.id.current_playing);
+        backBtn = findViewById(R.id.back_btn);
 
         myMusicDetails.add(new MyMusicDetail("SongName1","Artist1",2015,"Producer1"));
         myMusicDetails.add(new MyMusicDetail("SongName2","Artist2",2015,"Producer2"));
@@ -74,6 +76,14 @@ public class MyMusicActivity extends AppCompatActivity {
                         myMusicList.getContext().startActivity(detail);
 
                     }
+                }
+            });
+
+            backBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(MyMusicActivity.this,MainActivity.class);
+                    startActivity(i);
                 }
             });
 

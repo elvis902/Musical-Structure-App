@@ -25,6 +25,7 @@ public class PodcastActivity extends AppCompatActivity {
 
 
         currentPlaying = (Button)findViewById(R.id.current_playing);
+        Button backBtn = findViewById(R.id.back_btn);
 
         myMusicDetails.add(new MyMusicDetail("PodcastName1","Artist1",2015,"Producer1"));
         myMusicDetails.add(new MyMusicDetail("PodcastName2","Artist2",2015,"Producer2"));
@@ -78,6 +79,15 @@ public class PodcastActivity extends AppCompatActivity {
                     myMusicList.getContext().startActivity(detail);
 
                 }
+            }
+        });
+
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(PodcastActivity.this,MainActivity.class);
+                startActivity(i);
             }
         });
 

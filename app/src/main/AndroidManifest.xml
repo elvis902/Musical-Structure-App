@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity" android:label="Details of Song"></activity>
-        <activity android:name=".PlayMusicOnlineActivity" />
-        <activity android:name=".PodcastActivity" android:label="MyPodcast"/>
-        <activity android:name=".MyMusicActivity" android:label="MyMusic" />
+        <activity android:name=".DetailActivity" android:label="Details of Song" android:parentActivityName=".MyMusicActivity"></activity>
+        <activity android:name=".PlayMusicOnlineActivity" android:label="OnlineMusic" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PodcastActivity" android:label="MyPodcast" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MyMusicActivity" android:label="MyMusic" android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
